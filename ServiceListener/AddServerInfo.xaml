@@ -1,0 +1,27 @@
+﻿<Controls:MetroWindow x:Class="ServiceListener.AddServerInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServiceListener"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        Title="新增服务信息" Height="221.622" Width="324.324" AllowDrop="True" Topmost="True" WindowState="Normal" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Canvas Margin="0,0,0,0">
+        <Grid Canvas.Left="0" Canvas.Top="0" Height="181" Width="306" Background="White">
+            <Label Content="本机IP" HorizontalAlignment="Left" Margin="18,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.007,-0.392"/>
+            <Label Content="端口" HorizontalAlignment="Left" Margin="18,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.007,-0.392"/>
+            <Label Content="路径" HorizontalAlignment="Left" Margin="18,101,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.007,-0.392"/>
+
+            <TextBox Visibility="Hidden" Controls:ControlsHelper.FocusBorderBrush="Black" Name="Id" HorizontalAlignment="Left" Height="23" Margin="80,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Background="White" Foreground="Black" CaretBrush="Black"/>
+
+            <TextBox Controls:ControlsHelper.FocusBorderBrush="Black" Name="LocalIP" Controls:TextBoxHelper.Watermark="127.0.0.1" Text="127.0.0.1" HorizontalAlignment="Left" Height="23" Margin="80,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Background="White" Foreground="Black" CaretBrush="Black"/>
+            <TextBox Controls:ControlsHelper.FocusBorderBrush="Black" Name="Port" Controls:TextBoxHelper.Watermark="请填写端口" HorizontalAlignment="Left" Height="23" Margin="80,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Background="White" Foreground="Black" CaretBrush="Black"/>
+            <TextBox Controls:ControlsHelper.FocusBorderBrush="Black" Name="Path" Controls:TextBoxHelper.Watermark="请填写路径" HorizontalAlignment="Left" Height="23" Margin="80,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Background="White" Foreground="Black" CaretBrush="Black"/>
+
+            <Button Name="SureBtn" HorizontalAlignment="Left" Margin="225,147,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.598,0.456" Background="White" Click="OnSureClick">
+                <Run Text="确认" Foreground="Black"/>
+            </Button>
+        </Grid>
+    </Canvas>
+</Controls:MetroWindow>
