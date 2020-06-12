@@ -342,5 +342,9 @@ namespace ServiceListener
             }
         }
 
+        private void OnExitClick(object sender, RoutedEventArgs e)
+        {
+            DialogsBeforeExit();
+        }
     }
 }

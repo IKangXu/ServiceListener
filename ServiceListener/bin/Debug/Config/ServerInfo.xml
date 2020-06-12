@@ -1,4 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ServerInfos>
-  
+  <ServerInfo>
+    <Id>6d93e39a-3791-4d50-bc17-a5f606d3389b</Id>
+    <LocalIP>10.16.249.143</LocalIP>
+    <Port>3030</Port>
+    <Path>C:\Users\tangw\Documents\Tencent Files\1513087242\FileRecv\切片</Path>
+    <Started>True</Started>
+  </ServerInfo>
+  <ServerInfo>
+    <Id>6887bc01-315e-4c19-8230-4959f29c631e</Id>
+    <LocalIP>10.16.249.143</LocalIP>
+    <Port>5001</Port>
+    <Path>C:\Users\tangw\Desktop\Cesium_Test</Path>
+    <Started>False</Started>
+  </ServerInfo>
 </ServerInfos>

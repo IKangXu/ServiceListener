@@ -61,7 +61,7 @@ namespace ServiceListener
 
             LocalIP.IsEnabled = false;
             Port.IsEnabled = false;
-            Path.IsEnabled = false;
+            Path.IsReadOnly = true;
 
             SureBtn.Visibility = Visibility.Hidden;
 

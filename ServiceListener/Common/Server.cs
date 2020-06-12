@@ -5,6 +5,7 @@ using System.Threading;
 using System.Text;
 using System.Collections.Generic;
 using System.IO;
+using System.Web;
 
 namespace project_install.Common
 {
@@ -207,7 +208,7 @@ namespace project_install.Common
                 return;
             }
 
-            requestedFile = requestedFile.Replace("/", "\\").Replace("\\..", "");
+            requestedFile = HttpUtility.UrlDecode(requestedFile.Replace("/", "\\").Replace("\\..", ""), charEncoder);// requestedFile.Replace("/", "\\").Replace("\\..", "");
             start = requestedFile.LastIndexOf('.') + 1;
             if (start > 0)
             {

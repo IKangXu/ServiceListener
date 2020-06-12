@@ -257,7 +257,7 @@
                     <MenuItem Header="新建" Click="OnAddClick">
                     </MenuItem>
                     <Separator></Separator>
-                    <MenuItem Header="退出">
+                    <MenuItem Header="退出" Click="OnExitClick">
                     </MenuItem>
                 </MenuItem>
             </Menu>
