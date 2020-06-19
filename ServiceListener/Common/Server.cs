@@ -268,9 +268,12 @@ namespace project_install.Common
             {
                 byte[] bHeader = charEncoder.GetBytes(
                                     "HTTP/1.1 " + responseCode + "\r\n"
-                                  + "Server: Atasoy Simple Web Server\r\n"
+                                  + "Server: ServiceListener\r\n"
                                   + "Content-Length: " + bContent.Length.ToString() + "\r\n"
                                   + "Connection: close\r\n"
+                                  + "Access-Control-Allow-Origin: *\r\n"
+                                  + "Access-Control-Allow-Methods: *\r\n"
+                                  + "Access-Control-Allow-Headers: *\r\n"
                                   + "Content-Type: " + contentType + "\r\n\r\n");
                 clientSocket.Send(bHeader);
                 clientSocket.Send(bContent);
